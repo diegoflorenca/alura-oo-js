@@ -15,10 +15,9 @@ contaCorrenteRicardo.cliente = clienteRicardo;
 contaCorrenteRicardo.depositar(500);
 
 const contaCorrenteAlice = new ContaCorrente();
-contaCorrenteAlice.agencia = 102;
 contaCorrenteAlice.cliente = clienteAlice;
+contaCorrenteAlice.agencia = 102;
 
 contaCorrenteRicardo.transferir(200, contaCorrenteAlice);
 
-console.log(contaCorrenteAlice);
-console.log(contaCorrenteRicardo);
+console.log(contaCorrenteAlice.cliente);
